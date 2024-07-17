@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Advertisement>
+		<Text>Ad 1</Text>
+		<Url>https://www.example.com/ad1</Url>
+		<Priority>2</Priority>
+	</Advertisement>
+	<Advertisement>
+		<Text>Ad 2</Text>
+		<Url>https://www.example.com/ad2</Url>
+		<Priority>1</Priority>
+	</Advertisement>
+	<Advertisement>
+		<Text>Ad 3</Text>
+		<Url>https://www.example.com/ad3</Url>
+		<Priority>3</Priority>
+	</Advertisement>
+</Advertisements>
