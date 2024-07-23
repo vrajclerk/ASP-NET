@@ -69,6 +69,14 @@
   <ItemGroup>
     <Content Include="advertisements.aspx" />
     <Content Include="CalenderControl.aspx" />
+    <Content Include="data.xml" />
+    <Content Include="Image\photo1.jpeg" />
+    <Content Include="Image\photo2.jpeg" />
+    <Content Include="Image\photo3.jpeg" />
+    <Content Include="Image\photo4.jpeg" />
+    <Content Include="Image\rose1.jpeg" />
+    <Content Include="Image\rose2.jpeg" />
+    <Content Include="Image\rose3.jpeg" />
     <Content Include="table.aspx" />
     <Content Include="Web.config" />
     <Content Include="Advertisement.xml" />
@@ -106,6 +114,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

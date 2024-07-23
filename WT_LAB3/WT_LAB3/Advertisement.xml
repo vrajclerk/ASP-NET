@@ -1,18 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Advertisements>
-	<Advertisement>
-		<Text>Ad 1</Text>
-		<Url>https://www.example.com/ad1</Url>
-		<Priority>2</Priority>
-	</Advertisement>
-	<Advertisement>
-		<Text>Ad 2</Text>
-		<Url>https://www.example.com/ad2</Url>
-		<Priority>1</Priority>
-	</Advertisement>
-	<Advertisement>
-		<Text>Ad 3</Text>
-		<Url>https://www.example.com/ad3</Url>
-		<Priority>3</Priority>
-	</Advertisement>
+	<Ad>
+		<ImageUrl>Image/photo1.jpeg</ImageUrl>
+		<NavigateUrl>https://www.pexels.com/search/nature/</NavigateUrl>
+		<AlternateText>Image is currently unavailable</AlternateText>
+		<height>2000</height>
+		<width>3000</width>
+		<Impressions>20</Impressions>
+		<Keyword>Nature</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>Image/photo2.jpeg</ImageUrl>
+		<NavigateUrl>https://www.pexels.com/search/nature/</NavigateUrl>
+		<AlternateText>Image is currently unavailable</AlternateText>
+		<height>2000</height>
+		<width>3000</width>
+		<Impressions>20</Impressions>
+		<Keyword>Nature</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>Image/rose1.jpeg</ImageUrl>
+		<NavigateUrl>https://www.pexels.com/search/nature/</NavigateUrl>
+		<AlternateText>Image is currently unavailable</AlternateText>
+		<height>2000</height>
+		<width>3000</width>
+		<Impressions>20</Impressions>
+		<Keyword>Rose</Keyword>
+	</Ad>
+	<Ad>
+		<ImageUrl>Image/rose2.jpeg</ImageUrl>
+		<NavigateUrl>https://www.pexels.com/search/nature/</NavigateUrl>
+		<AlternateText>Image is currently unavailable</AlternateText>
+		<height>2000</height>
+		<width>3000</width>
+		<Impressions>20</Impressions>
+		<Keyword>Rose</Keyword>
+	</Ad>
 </Advertisements>
