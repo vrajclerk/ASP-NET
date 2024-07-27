@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MasterPage.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div id="divHeader" style="background-color: #FFA500; color: White; padding: 5px; text-align: center;">
+            <h1>Header</h1>
+           </div>
+        <div id="divMenu" style="background-color:beige;text-align:center">
+            <asp:HyperLink ID="h1Home" runat="server" NavigateUrl="~/Home.aspx"/>
+            <asp:HyperLink ID="h1About" runat="server" NavigateUrl="~/About.aspx"/>
+            <asp:HyperLink ID="h1Contact" runat="server" NavigateUrl="~/Contact.aspx"/>
+
+        </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="divFooter" style="background-color:azure">
+            <h1>Footer</h1>
+            
+        </div>
+    </form>
+</body>
+</html>

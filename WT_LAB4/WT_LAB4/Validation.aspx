@@ -69,7 +69,7 @@
                 <asp:ListItem Text="Certificate 2" Value="Certificate2"></asp:ListItem>
                 <asp:ListItem Text="Certificate 3" Value="Certificate3"></asp:ListItem>
             </asp:CheckBoxList>
-            <%--<asp:CustomValidator ID="cvCertificates" runat="server" ErrorMessage="Please select at least one certificate." Display="Dynamic" OnServerValidate="cvCertificates_ServerValidate"></asp:CustomValidator>--%>
+            <asp:CustomValidator ID="cvCertificates" runat="server" ErrorMessage="Please select at least one certificate." Display="Dynamic" OnServerValidate="cvCertificates_ServerValidate"></asp:CustomValidator>
         </div>
         <div>
             <label>Gender:</label>

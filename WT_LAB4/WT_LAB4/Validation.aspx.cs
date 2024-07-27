@@ -23,7 +23,7 @@ namespace WT_LAB4
             if (sname == "India")
             {
                 DropDownList2.Items.Clear();
-                DropDownList2.Items.Add(new ListItem("Select State", ""));
+                DropDownList2.Items.Add(("Select State"));
                 DropDownList2.Items.Add("Gujarat");
                 DropDownList2.Items.Add("Rajasthan");
                 DropDownList2.Items.Add("Maharashtra");
@@ -136,10 +136,9 @@ namespace WT_LAB4
                 Response.Write("<h1>" + "Fill up all the details " + "</h1>");
             }
 
-        }
-
-
-        private string GetSelectedCheckBoxListItems(CheckBoxList checkBoxList)
+        }    
+            
+        private string cvCertificates_ServerValidate(CheckBoxList checkBoxList)
         {
             List<string> selectedItems = new List<string>();
 
