@@ -5,13 +5,18 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WT_LAB3
+namespace Paper
 {
-    public partial class advertisements : System.Web.UI.Page
+    public partial class inageControl : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AdRotator1.KeywordFilter = "Rose";
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5B3FD081-9B9E-4096-AB6C-25F70DAC2AEF}</ProjectGuid>
+    <ProjectGuid>{5B9E1653-0BE7-43E2-9C25-050E96F591EB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WT_LAB4</RootNamespace>
-    <AssemblyName>WT_LAB4</AssemblyName>
+    <RootNamespace>Paper</RootNamespace>
+    <AssemblyName>Paper</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44329</IISExpressSSLPort>
+    <IISExpressSSLPort>44337</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,62 +67,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Validation.aspx" />
+    <Content Include="calender.aspx" />
+    <Content Include="images\0.jpg" />
+    <Content Include="inageControl.aspx" />
+    <Content Include="table.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NestedMasterPage1.master.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    <Compile Include="calender.aspx.cs">
+      <DependentUpon>calender.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NestedMasterPage1.master.designer.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    <Compile Include="calender.aspx.designer.cs">
+      <DependentUpon>calender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inageControl.aspx.cs">
+      <DependentUpon>inageControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inageControl.aspx.designer.cs">
+      <DependentUpon>inageControl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="table.aspx.cs">
+      <DependentUpon>table.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Validation.aspx.cs">
-      <DependentUpon>Validation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Validation.aspx.designer.cs">
-      <DependentUpon>Validation.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
+    <Compile Include="table.aspx.designer.cs">
+      <DependentUpon>table.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include=".editorconfig" />
-    <Content Include="NestedMasterPage1.master" />
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,9 +119,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61479</DevelopmentServerPort>
+          <DevelopmentServerPort>53085</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44329/</IISUrl>
+          <IISUrl>https://localhost:44337/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

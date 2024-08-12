@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WT_LAB3
+namespace WT_LAB4
 {
-    public partial class advertisements : System.Web.UI.Page
+    public partial class NestedMasterPage1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            AdRotator1.KeywordFilter = "Rose";
+
         }
     }
 }
