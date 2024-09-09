@@ -17,7 +17,7 @@ namespace WT_LAB5
         {
 
         }
-
+        //Select Query
         protected void Button1_Click(object sender, EventArgs e)
         {
             display();
@@ -37,14 +37,25 @@ namespace WT_LAB5
                 GridView1.DataSource = reader;
                 GridView1.DataBind();
             }
+            cleartb();
+        }
+        protected void cleartb()
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
         }
 
+        //INSERT QUERY
         protected void Button2_Click(object sender, EventArgs e)
         {
             using(SqlConnection conn = new SqlConnection(cs))
             {
                 string query = "INSERT INTO Student  VALUES (" +TextBox1.Text + ", '" +TextBox2.Text + "', '" +
                     TextBox3.Text + "', '" +TextBox4.Text + "', '" +TextBox5.Text + "')";
+                
                 SqlCommand sqlCommand = new SqlCommand(query, conn);
                 conn.Open();
                 int n = sqlCommand.ExecuteNonQuery();
@@ -54,11 +65,13 @@ namespace WT_LAB5
                 }
                 else
                 {
-                    display();
+                    Response.Write("Insert successful");
+                    
                 }
+                display();
             }
         }
-
+        //UPDATE QUERY
         protected void Button3_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(cs))
@@ -81,7 +94,7 @@ namespace WT_LAB5
                 }
             }
         }
-
+        //DELETE QUERY
         protected void Button4_Click(object sender, EventArgs e)
         {
             using (SqlConnection conn = new SqlConnection(cs))
