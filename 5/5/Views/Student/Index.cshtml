@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Student Portal";
+}
+
+<h2>Student Portal</h2>
+
+<!-- Displaying data using ViewData -->
+<p>@ViewData["Message"]</p>
+
+<!-- Displaying data using ViewBag -->
+<p>Author: @ViewBag.Author</p>
+
+<!-- Displaying data using ViewData object -->
+@if (ViewData["Student"] != null)
+{
+    var student = (ViewData["Student"] as _5.Models.Student);
+
+    <h3>Student Details:</h3>
+    <ul>
+        <li>ID: @student.Id</li>
+        <li>Name: @student.Name</li>
+        <li>Grade: @student.Grade</li>
+    </ul>
+}

@@ -1,0 +1,11 @@
+﻿@model _7.Models.Student
+
+<h2>Student Details</h2>
+
+<div>
+    <strong>Name:</strong> @Model.Name <br />
+    <strong>Age:</strong> @Model.Age <br />
+    <strong>Course:</strong> @Model.Course <br />
+</div>
+
+@Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })

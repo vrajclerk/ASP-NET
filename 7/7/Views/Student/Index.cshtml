@@ -1,0 +1,30 @@
+﻿@model IEnumerable<_7.Models.Student>
+
+<h2>Students</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var student in Model)
+    {
+        <tr>
+            <td>@student.Name</td>
+            <td>@student.Age</td>
+            <td>@student.Course</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = student.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { id = student.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = student.StudentID })
+            </td>
+        </tr>
+    }
+</table>

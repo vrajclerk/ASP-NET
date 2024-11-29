@@ -1,0 +1,41 @@
+﻿@model _9.Models.Cal
+@{
+    ViewBag.Title = "Calculator";
+}
+
+<h2>Calculator Application</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Number1)
+        @Html.TextBoxFor(m => m.Number1)
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Number2)
+        @Html.TextBoxFor(m => m.Number2, new { @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.LabelFor(m => m.Operation)
+        @Html.DropDownListFor(m => m.Operation, (SelectList)ViewBag.Operations, "Select Operation", new { @class = "form-control" })
+    </div>
+
+    <div>
+        @Html.CheckBoxFor(m => m.IsAdvancedOperation)
+        @Html.LabelFor(m => m.IsAdvancedOperation, "Perform advanced operation?")
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+    </div>
+
+    if (Model.Result != null)
+    {
+        <div>
+            @Html.LabelFor(m => m.Result)
+            <span>@Model.Result</span>
+        </div>
+    }
+}
